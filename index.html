@@ -4,56 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
     <title>Landing-Podcast</title>
 </head>
-
-<body class="container-fluid">
-    <!-- <div class="div-navbar">
-        <div class="div-img">
-            <img src="/assets/logo.svg">
-        </div>
+    
+<body>
+    <header>
         <nav class="navbar">
-            <div class="navbar-div">
-                <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                <a class="nav-link active" href="#">Features</a>
-                <a class="nav-link active" href="#">Pricing</a>
-                <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </div>
+            <section class="nav-section">
+                <div class="logo">
+                    <img src="/assets/logo.svg" alt="logo" class="img">
+                </div>
+                <div class="links-nav">
+                    <a class="nav-link" href="#">episodios</a>
+                    <a class="nav-link" href="#">nosotros</a>
+                    <a class="nav-link" href="#">entrevistas</a>
+                    <a class="nav-link" href="#" >tópicos</a>
+                </div>
+                <div class="hamburguer">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </section>            
         </nav>
-    </div> -->
-    <div class="row">
-        <div class="col-10 col-md-8">
-            <nav class="navbar navbar-light">
-                  <img src="/assets/logo.svg" width="30" height="30" alt="" loading="lazy">
-            </nav>
+    </header>
+    <main>
+        <div class="hello-div">
+            <section class="hello-section">
+                <h1 class="hello-h1">Hello <strike>word</strike> pale blue dot.</h1>
+                <p class="hello-p">El portal de podcast que explora el mundo de la programación y la tecnología. Nuevos 
+                    episodios todos los jueves cada 15 días.
+                </p>
+                <div class="link-div">
+                    <a href="#" class="hello-link">conoce más</a>
+                </div>
+            </section>
         </div>
-        <div class="col-2 col-md-4">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>            
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">                    
-                    <div class="navbar-nav">
-                        <a class="nav-link active" href="#">EPISODIOS <span class="sr-only">(current)</span></a>
-                        <a class="nav-link active" href="#">ENTREVISTAS</a>
-                        <a class="nav-link active" href="#">NOSOTROS</a>
-                        <a class="nav-link active" href="#">TÓPICOS</a>
-                    </div>
-                </div>                
-            </nav>
-        </div>        
-    </div>
-    <div class="row">
-        <div class="col-12">
-
+        <div class="div-episodios">
+            <section class="section-episodios">
+                <h2 class="h2-episodios">Episodios</h2>
+                <div class="img-episodios">
+                    <img class="img-normal" src="/assets/embed1.png" alt="image js party ">
+                    <img class="img-small" src="/assets/embed1_.png" alt="image js party small">
+                    <img class="img-normal" src="/assets/embed2.png" alt="image sintax">
+                    <img class="img-small" src="/assets/embed2_.png" alt="image sintax small">
+                    <img class="img-normal" src="/assets/embed3.png" alt="image rework">
+                    <!-- <img src="/assets/embed3_.png" alt="image rework small"> -->
+                    <img class="img-normal" src="/assets/embed4.png" alt="image ruby on rails">
+                    <img class="img-small" src="/assets/embed4_.png" alt="image ruby on rails small">
+                </div>
+            </section>
         </div>
-    </div>
+        <div class="nosotros-div">
+            <section class="nosotros-section">
+                <div class="img-div">
+                    <img class="img-phone" src="/assets/phone.png" alt="">
+                </div>
+                <div class="article.nosotros">
+                    <article>
+                        <h2 class="nosotros-h2">De dónde venimos</h2>
+                        <p class="nosotros-p">Our posturings, our imagined self-importance, the delusion that we have some privileged
+                            position in the universe, are challenged by this point of pale light.
+                        </p>
+                        <p class="nosotros-p">Our planet is a lonley speck in the great enveloping cosmic dark.In our osbcurity, in all
+                            this vastness, there is not hint that help will come from elsewhere to save us from 
+                            ourselves.
+                        </p>
+                    </article>                    
+                </div>
+            </section>            
+        </div>
+        <div class="entrevistas-div">
+            <section class="entrevistas-div">
+                <h2 class="entrevistas-h2">Invitadas/os estelares</h2>
+                <img src="/assets/grace-hopper.png" alt="image grace hopper">
+                <img src="/assets/Katie-Bouman.png" alt="image katie bouman">
+                <img src="/assets/Margaret_Hamilton.png" alt="image margaret hamilton">
+                <img src="/assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="image computer in the 1950s">
+                <img src="/assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="image first computer">
+                <img src="/assets/susan-kare.png" alt="image susan kare">
+            </section>
+        </div>
+        <div class="topicos-div">
+            <section class="topicos-section">
+                <h2 class="topicos-h2">Algunos de nuestros temas</h2>
+                <div class="topico1">
+                    <img src="/assets/icon1.svg" alt="">
+                    <p>Trabajo remoto</p>
+                </div>
+                <div class="topico2">
+                    <img src="/assets/icon2.svg" alt="">
+                    <p>Repensando la programación</p>
+                </div>
+                <div class="topico3">
+                    <img src="/assets/icon3.svg" alt="">
+                    <p>Bases de código</p>
+                </div>
+                <div class="topico4">
+                    <img src="/assets/icon4.svg" alt="">
+                    <p>Seguridad informática</p>
+                </div>
+            </section>
+        </div>
+        <div class="novedades-div">
+            <section class="novedades-section">
+                <h2>¿Quieres las últimas novedades?</h2>
+                <a href="#">escucha los episodios</a>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="copy-right">
+            <p>© 2019 - Hello blue pale dot</p>
+        </div>
+        <div class="redes-sociales">
+            <i class="fab fa-google-plus"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-telegram"></i>
+        </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"        
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -61,7 +137,10 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
+    </script> -->
+
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/aa7e44f5a7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

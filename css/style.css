@@ -1,14 +1,125 @@
-.div-navbar {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    color: #060A24;    
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
+}
+
+.nav-section {
+    width: 100vw;
+    max-width: 1345px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: ;
+    justify-content: space-between;
+    padding: 0 50px;    
 }
 
-.navbar-div {
-    display: inline;
+nav section .logo {
+    width: 36px;
+    height: 36px;
+}
+
+.navbar .logo .img {
+    width: 100%;
+}
+
+.links-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .nav-link {
-    color: gray;
+    text-decoration: none;
+    padding: 0 15px;
+    text-transform: uppercase;
+}
+
+.hamburguer {
+    display: none;
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.hello-div {     
+    width: 100vw;    
+    height: 220px;    
+    margin-top: 3.1%;
+    background-color: cadetblue;
+}
+
+main .hello-div .hello-section {
+    width: 750px;
+    display: block;
+    text-align: left;
+    margin-left: 200px;
+}
+
+.hello-div .hello-h1 {
+    font-size: 64px;
+}
+
+.hello-div .hello-section .hello-p {
+    margin-bottom: 50px;
+}
+
+.hello-div .hello-section .link-div .hello-link {
+    background-color: #00F3BB;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.div-episodios .section-episodios {
+    padding: 200px 0;
+}
+
+.div-episodios .section-episodios .h2-episodios {
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.div-episodios .section-episodios .img-episodios {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    /* padding: 20px; */
+}
+
+.img-normal {
+    padding: 30px;
+}
+
+.img-small {
+    display: none;
+}
+
+.nosotros-section {
+    display: flex;
+}
+
+.img-div {
+    position: relative;
+    top: -150px;
+    left: 50px;
+}
+
+.article-nosotros article {
+    width: 350;
+    background-color: #00F3BB;
 }
