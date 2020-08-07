@@ -1,0 +1,14 @@
+.div-navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: ;
+}
+
+.navbar-div {
+    display: inline;
+}
+
+.nav-link {
+    color: gray;
+}
