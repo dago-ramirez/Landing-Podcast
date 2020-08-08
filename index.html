@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- Fontawesome kit -->
+    <script src="https://kit.fontawesome.com/aa7e44f5a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
     <title>Landing-Podcast</title>
@@ -19,10 +19,10 @@
                     <img src="/assets/logo.svg" alt="logo" class="img">
                 </div>
                 <div class="links-nav">
-                    <a class="nav-link" href="#">episodios</a>
-                    <a class="nav-link" href="#">nosotros</a>
-                    <a class="nav-link" href="#">entrevistas</a>
-                    <a class="nav-link" href="#" >tópicos</a>
+                    <a class="nav-link" href="#episodios">episodios</a>
+                    <a class="nav-link" href="#nosotros">nosotros</a>
+                    <a class="nav-link" href="#entreviestas">entrevistas</a>
+                    <a class="nav-link" href="#topicos" >tópicos</a>
                 </div>
                 <div class="hamburguer">
                     <i class="fas fa-bars"></i>
@@ -38,13 +38,13 @@
                     episodios todos los jueves cada 15 días.
                 </p>
                 <div class="link-div">
-                    <a href="#" class="hello-link">conoce más</a>
+                    <a class="link" href="#" class="hello-link">conoce más</a>
                 </div>
             </section>
         </div>
-        <div class="div-episodios">
-            <section class="section-episodios">
-                <h2 class="h2-episodios">Episodios</h2>
+        <div class="episodios-div">
+            <section id="episodios" class="section-episodios">
+                <h2 class="h2-episodios h2-color">Episodios</h2>
                 <div class="img-episodios">
                     <img class="img-normal" src="/assets/embed1.png" alt="image js party ">
                     <img class="img-small" src="/assets/embed1_.png" alt="image js party small">
@@ -58,11 +58,11 @@
             </section>
         </div>
         <div class="nosotros-div">
-            <section class="nosotros-section">
+            <section id="nosotros" class="nosotros-section">
                 <div class="img-div">
                     <img class="img-phone" src="/assets/phone.png" alt="">
                 </div>
-                <div class="article.nosotros">
+                <div class="article-nosotros">
                     <article>
                         <h2 class="nosotros-h2">De dónde venimos</h2>
                         <p class="nosotros-p">Our posturings, our imagined self-importance, the delusion that we have some privileged
@@ -77,41 +77,45 @@
             </section>            
         </div>
         <div class="entrevistas-div">
-            <section class="entrevistas-div">
+            <section id="entreviestas" class="entrevistas-div">
                 <h2 class="entrevistas-h2">Invitadas/os estelares</h2>
-                <img src="/assets/grace-hopper.png" alt="image grace hopper">
-                <img src="/assets/Katie-Bouman.png" alt="image katie bouman">
-                <img src="/assets/Margaret_Hamilton.png" alt="image margaret hamilton">
-                <img src="/assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="image computer in the 1950s">
-                <img src="/assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="image first computer">
-                <img src="/assets/susan-kare.png" alt="image susan kare">
+                <div class="img-entrevistas-container">
+                    <img class="img-entrevistas" src="/assets/grace-hopper.png" alt="image grace hopper">
+                    <img class="img-entrevistas" src="/assets/Katie-Bouman.png" alt="image katie bouman">
+                    <img class="img-entrevistas" src="/assets/Margaret_Hamilton.png" alt="image margaret hamilton">
+                    <img class="img-entrevistas" src="/assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="image computer in the 1950s">
+                    <img class="img-entrevistas" src="/assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="image first computer">
+                    <img class="img-entrevistas"src="/assets/susan-kare.png" alt="image susan kare">
+                </div>
             </section>
         </div>
         <div class="topicos-div">
-            <section class="topicos-section">
+            <section id="topicos" class="topicos-section">
                 <h2 class="topicos-h2">Algunos de nuestros temas</h2>
-                <div class="topico1">
-                    <img src="/assets/icon1.svg" alt="">
-                    <p>Trabajo remoto</p>
-                </div>
-                <div class="topico2">
-                    <img src="/assets/icon2.svg" alt="">
-                    <p>Repensando la programación</p>
-                </div>
-                <div class="topico3">
-                    <img src="/assets/icon3.svg" alt="">
-                    <p>Bases de código</p>
-                </div>
-                <div class="topico4">
-                    <img src="/assets/icon4.svg" alt="">
-                    <p>Seguridad informática</p>
-                </div>
+                <div class="article-div">
+                    <div class="topico topico1">
+                        <img src="/assets/icon1.svg" alt="">
+                        <p>Trabajo remoto</p>
+                    </div>
+                    <div class="topico topico2">
+                        <img src="/assets/icon2.svg" alt="">
+                        <p>Repensando la programación</p>
+                    </div>
+                    <div class="topico topico3">
+                        <img src="/assets/icon3.svg" alt="">
+                        <p>Bases de código</p>
+                    </div>
+                    <div class="topico topico4">
+                        <img src="/assets/icon4.svg" alt="">
+                        <p>Seguridad informática</p>
+                    </div>
+                </div>                
             </section>
         </div>
         <div class="novedades-div">
             <section class="novedades-section">
-                <h2>¿Quieres las últimas novedades?</h2>
-                <a href="#">escucha los episodios</a>
+                <h2 class="h2-color">¿Quieres las últimas novedades?</h2>
+                <a class="link" href="#">escucha los episodios</a>
             </section>
         </div>
     </main>
@@ -127,20 +131,6 @@
             <i class="fab fa-telegram"></i>
         </div>
     </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"        
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script> -->
-
-    <!-- Fontawesome kit -->
-    <script src="https://kit.fontawesome.com/aa7e44f5a7.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
