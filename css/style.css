@@ -60,7 +60,8 @@ header::before {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;    
+    padding: 0 50px;
+    transition: ease-in-out 0.5s;
 }
 
 nav section .logo {
@@ -320,206 +321,276 @@ footer .redes-sociales i {
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección barra de navegación                                                                                                    */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
-header::before {
-    content: "";
-    display: block;
-    margin-bottom: 44px;
-}
+    header::before {
+        content: "";
+        display: block;
+        margin-bottom: 44px;
+    }
 
-.nav-section {
-    width: 100%;
-    height: 44px;
-}
+    .nav-section {
+        width: 100%;
+        height: 44px;
+    }
 
-nav section .logo {
-    width: 24px;
-    height: 24px;
-}
+    nav section .logo {
+        width: 24px;
+        height: 24px;
+    }
 
-.navbar .logo .img {
-    width: 100%;
-}
+    .navbar .logo .img {
+        width: 100%;
+    }
 
-.links-nav {
-    display: none;
-}
+    .links-nav {
+        position: fixed;
+        background-color: #0000EC;
+    }
 
-.hamburguer {
-    display: block;
-    width: 18px;
-    height: 12px;
-    cursor: pointer;
-}
+    .hamburguer {
+        display: block;
+        width: 18px;
+        height: 12px;
+        cursor: pointer;
+    }
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección Hello                                                                                                                  */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-main .hello-div .hello-section {
-    margin: 50px 16px 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
-}
+    main .hello-div .hello-section {
+        margin: 50px 16px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
 
-.hello-div .hello-h1 {
-    font-size: 50px;
-    margin: 0px 0 30px;
-}
+    .hello-div .hello-h1 {
+        font-size: 50px;
+        margin: 0px 0 30px;
+    }
 
-.hello-div .hello-section .hello-p {
-    margin: 5px 0;
-}
+    .hello-div .hello-section .hello-p {
+        margin: 5px 0;
+    }
 
-.hello-link {
-    margin: 60px 0 0;
-}
+    .hello-link {
+        margin: 60px 0 0;
+    }
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección episodios                                                                                                              */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-.episodios-div {
-    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
-    transform: skew(0deg, -6deg);
-    margin: 100px 0;
-}
+    .episodios-div {
+        background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+        transform: skew(0deg, -6deg);
+        margin: 100px 0;
+    }
 
-.episodios-div .section-episodios {
-   padding: 100px 0;
-   transform: skew(0deg, 6deg);
-}
+    .episodios-div .section-episodios {
+    padding: 100px 0;
+    transform: skew(0deg, 6deg);
+    }
 
 
-.episodios-div .section-episodios .img-episodios {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: space-between;
-    align-content: center;
-    margin-top: 50px;
-}
+    .episodios-div .section-episodios .img-episodios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: space-between;
+        align-content: center;
+        margin-top: 50px;
+    }
 
-.episodios-div .section-episodios .img-episodios .imagen {
-    width: 90%;
-    padding: 0;
-}
+    .episodios-div .section-episodios .img-episodios .imagen {
+        width: 90%;
+        padding: 0;
+    }
 
-.episodios-div .img-normal {
-    display: none;
-}
+    .episodios-div .img-normal {
+        display: none;
+    }
 
-.episodios-div .img-small {
-    display: block;
-    width: 100%;
-}
+    .episodios-div .img-small {
+        display: block;
+        width: 100%;
+    }
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección nosotros                                                                                                               */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-.nosotros-div .nosotros-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: left;
-}
+    .nosotros-div .nosotros-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
 
-.nosotros-div .nosotros-section .img-div {
-    width: 70%;
-}
+    .nosotros-div .nosotros-section .img-div {
+        width: 70%;
+    }
 
-.nosotros-div .nosotros-section .img-div>img {
-    width: 100%;
-    position: relative;
-    top: -130px;
-    left: 2%;
-}
+    .nosotros-div .nosotros-section .img-div>img {
+        width: 100%;
+        position: relative;
+        top: -130px;
+        left: 2%;
+    }
 
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección entrevistas                                                                                                            */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-.entrevistas-div {
-    margin-top: 20px;
-}
+    .entrevistas-div {
+        margin-top: 20px;
+    }
 
-.entrevistas-div .img-entrevistas-container {
-    display: flex;
-    flex-flow: column wrap;
-    margin-top: 20px;
-}
+    .entrevistas-div .img-entrevistas-container {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+    }
 
-.entrevistas-div .img-entrevistas {
-    width: 100%;
-}
+    .entrevistas-div .img-entrevistas {
+        width: 100%;
+    }
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección tópicos                                                                                                                */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-.topicos-div .article-div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-}
+    .topicos-div .article-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-.topicos-div .article-div .topico {
-    display: block;
-    width: 50%;
-    margin-bottom: 350px;
-    text-align: center;
-}
+    .topicos-div .article-div .topico {
+        display: block;
+        width: 50%;
+        margin-bottom: 350px;
+        text-align: center;
+    }
 
-.topicos-div .article-div .topico .img-topico {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+    .topicos-div .article-div .topico .img-topico {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.topicos-div .article-div .topico img {
-    width: 100%;
-}
+    .topicos-div .article-div .topico img {
+        width: 100%;
+    }
 
-.topicos-div .article-div .topico p {
-    font-size: 30px;
-    margin-top: 30px;
-    line-height: 1.2em;
-}
+    .topicos-div .article-div .topico p {
+        font-size: 30px;
+        margin-top: 30px;
+        line-height: 1.2em;
+    }
 
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección novedades                                                                                                              */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-.novedades-div .novedades-section h2 {
-    margin-bottom: 50px;
-}
+    .novedades-div .novedades-section h2 {
+        margin-bottom: 50px;
+    }
 
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección footer                                                                                                                 */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-footer {
-    width: 100%;
-    height: 142px;
-    z-index: 100;
-    background-color: white;
-    position: relative;
-    /* bottom: -62px; */
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px; 
+    footer {
+        width: 100%;
+        height: 142px;
+        z-index: 100;
+        background-color: white;
+        position: relative;
+        /* bottom: -62px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px; 
+    }
+
+    footer .redes-sociales i {
+        display: inline;
+        margin: 0 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
 }
 
-footer .redes-sociales i {
-    display: inline;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 20px;
+@media (max-width: 575px) {
+    .link-div a {
+        padding: 15px 25%;
+    }
+
+    .topicos-div .article-div .topico {
+        width: 50%;
+        margin-bottom: 150px;
+    }
+
+    .topicos-div .article-div .topico img {
+        width: 90%;
+    }
+
+    .topicos-div .article-div .topico p {
+        font-size: 20px;
+        margin-top: 10px;
+        line-height: 1.2em;
+    }
+
+    .novedades-div .novedades-section h2 {
+        margin-bottom: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10px; 
+    }
+
+    footer .redes-sociales i {
+        display: inline;
+        margin: 0 15px;
+        cursor: pointer;
+        font-size: 20px;
+    }
 }
 
+@media (max-width: 450px) {
+    .link-novedades a {
+        padding: 15px 15%;
+    }
+
+    .novedades-section>h2 {
+        font-size: 35px;
+    }
+
+    footer {
+        height: 100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px; 
+    }
+
+}
+
+@media (max-width: 360px) {
+    .link-novedades a {
+        padding: 15px 10%;
+    }
+
+    .novedades-section>h2 {
+        font-size: 30px;
+    }
 }
