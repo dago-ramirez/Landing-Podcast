@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box;
     color: #060A24;    
 }
 
@@ -10,8 +10,7 @@
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 body {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 16px;    
-    max-width: 1350px;
+    font-size: 16px;
 }
 
 .link {
@@ -30,17 +29,17 @@ body {
 
 h2 {
     font-size: 48px;
-    margin: 30px 200px;
+    margin: 0 15% 30px;
+}
+
+p {
+    line-height: 1.5em;
 }
 
 .h2-color {
     color: white;
 }
 
-p {
-    line-height: 1.5;
-    margin: 15px 0;
-}
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección barra de navegación                                                                                                    */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
@@ -104,26 +103,25 @@ nav section .logo {
 /* Sección Hello                                                                                                                  */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-.hello-div {     
-    width: 100%;    
-    height: 220px;    
-    margin-top: 3.1%;
-}
-
 main .hello-div .hello-section {
-    width: 750px;
-    display: block;
+    width: 90%;    
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    margin-left: 200px;
+    margin-left: 10%;
 }
 
 .hello-div .hello-h1 {
     font-size: 64px;
+    margin-bottom: 10px;
 }
 
 .hello-div .hello-section .hello-p {
-    margin-bottom: 50px;
-}
+    width: 100%;
+    max-width: 650px;
+    margin-bottom: 60px;
+} 
+
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección episodios                                                                                                              */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
@@ -140,60 +138,68 @@ main .hello-div .hello-section {
 }
 
 .episodios-div .section-episodios .img-episodios {
-    height: 520px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-between;
 }
 
+.episodios-div .section-episodios .img-episodios .imagen {
+    width: 45%;
+    margin: 10px;
+}
+
 .episodios-div .img-normal {
-    padding: 0 30px;
+    width: 100%;
 }
 
 .episodios-div .img-small {
     display: none;
 }
+
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección nosotros                                                                                                               */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
 .nosotros-div .nosotros-section {
-    width: 100%;
-    height: 700px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
 }
 
 .nosotros-div .nosotros-section .img-div {
     width: 40%;
-    height: 90%;
 }
 
 .nosotros-div .nosotros-section .img-div>img {
-    width: 90%;
+    width: 100%;
     position: relative;
-    top: -180px;
-    left: 50px;
+    top: -130px;
+    left: 10%;
 }
 
 .nosotros-div .nosotros-section .article-nosotros {
-    width: 40%;
+    width: 50%;
     height: 90%;
-    margin: 50px;
+    margin-left: 50px;
+    text-align: left;
 }
 
 .nosotros-div .nosotros-section .article-nosotros .nosotros-h2 {
+    margin-left: 0px;
+}
+
+.nosotros-div .nosotros-section .article-nosotros p {
+    max-width: 400px;
     margin: 20px 0;
 }
+
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección entrevistas                                                                                                            */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
 .entrevistas-div {
-    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .entrevistas-div .img-entrevistas-container {
@@ -208,8 +214,8 @@ main .hello-div .hello-section {
 /* Sección tópicos                                                                                                                */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 
-.topicos-div .article-div {
-    margin: 100px 250px;
+.topicos-div .topicos-section .article-div {
+    margin: 100px 10%;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -251,6 +257,250 @@ main .hello-div .hello-section {
 /* -------------------------------------------------------------------------------------------------------------------------------*/
 /* Sección footer                                                                                                                 */
 /* -------------------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    height: 142px;
+    z-index: 100;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px; 
+}
+
+footer .redes-sociales i {
+    display: inline;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección Responsive                                                                                                             */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 800px) and (max-width: 1040px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 799.98px) {
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección selectores genérales                                                                                                   */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+    body {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .link-div {
+        display: block;
+        text-align: center  ;
+    }
+
+    .link-div a {
+        padding: 15px 170px;
+    }
+
+    h2 {
+        font-size: 40px;
+        margin: 1.2% 5%;
+    }
+
+    p {
+        line-height: 22px;
+        margin: 15px 0;
+        font-size: 20px;
+    }
+
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección barra de navegación                                                                                                    */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 44px;
+}
+
+.nav-section {
+    width: 100%;
+    height: 44px;
+}
+
+nav section .logo {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar .logo .img {
+    width: 100%;
+}
+
+.links-nav {
+    display: none;
+}
+
+.hamburguer {
+    display: block;
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección Hello                                                                                                                  */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
+main .hello-div .hello-section {
+    margin: 50px 16px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.hello-div .hello-h1 {
+    font-size: 50px;
+    margin: 0px 0 30px;
+}
+
+.hello-div .hello-section .hello-p {
+    margin: 5px 0;
+}
+
+.hello-link {
+    margin: 60px 0 0;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección episodios                                                                                                              */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
+.episodios-div {
+    background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    transform: skew(0deg, -6deg);
+    margin: 100px 0;
+}
+
+.episodios-div .section-episodios {
+   padding: 100px 0;
+   transform: skew(0deg, 6deg);
+}
+
+
+.episodios-div .section-episodios .img-episodios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-content: center;
+    margin-top: 50px;
+}
+
+.episodios-div .section-episodios .img-episodios .imagen {
+    width: 90%;
+    padding: 0;
+}
+
+.episodios-div .img-normal {
+    display: none;
+}
+
+.episodios-div .img-small {
+    display: block;
+    width: 100%;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección nosotros                                                                                                               */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
+.nosotros-div .nosotros-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.nosotros-div .nosotros-section .img-div {
+    width: 70%;
+}
+
+.nosotros-div .nosotros-section .img-div>img {
+    width: 100%;
+    position: relative;
+    top: -130px;
+    left: 2%;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección entrevistas                                                                                                            */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
+.entrevistas-div {
+    margin-top: 20px;
+}
+
+.entrevistas-div .img-entrevistas-container {
+    display: flex;
+    flex-flow: column wrap;
+    margin-top: 20px;
+}
+
+.entrevistas-div .img-entrevistas {
+    width: 100%;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección tópicos                                                                                                                */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
+.topicos-div .article-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topicos-div .article-div .topico {
+    display: block;
+    width: 50%;
+    margin-bottom: 350px;
+    text-align: center;
+}
+
+.topicos-div .article-div .topico .img-topico {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.topicos-div .article-div .topico img {
+    width: 100%;
+}
+
+.topicos-div .article-div .topico p {
+    font-size: 30px;
+    margin-top: 30px;
+    line-height: 1.2em;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección novedades                                                                                                              */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
+.novedades-div .novedades-section h2 {
+    margin-bottom: 50px;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+/* Sección footer                                                                                                                 */
+/* -------------------------------------------------------------------------------------------------------------------------------*/
+
 footer {
     width: 100%;
     height: 142px;
@@ -270,4 +520,6 @@ footer .redes-sociales i {
     margin: 0 10px;
     cursor: pointer;
     font-size: 20px;
+}
+
 }

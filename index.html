@@ -7,6 +7,7 @@
     <!-- Fontawesome kit -->
     <script src="https://kit.fontawesome.com/aa7e44f5a7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
     <title>Landing-Podcast</title>
 </head>
@@ -37,7 +38,7 @@
                 <p class="hello-p">El portal de podcast que explora el mundo de la programación y la tecnología. Nuevos 
                     episodios todos los jueves cada 15 días.
                 </p>
-                <div class="link-div">
+                <div class="link-div hello-link">
                     <a class="link" href="#" class="hello-link">conoce más</a>
                 </div>
             </section>
@@ -46,14 +47,23 @@
             <section id="episodios" class="section-episodios">
                 <h2 class="h2-episodios h2-color">Episodios</h2>
                 <div class="img-episodios">
-                    <img class="img-normal" src="/assets/embed1.png" alt="image js party ">
-                    <img class="img-small" src="/assets/embed1_.png" alt="image js party small">
-                    <img class="img-normal" src="/assets/embed2.png" alt="image sintax">
-                    <img class="img-small" src="/assets/embed2_.png" alt="image sintax small">
-                    <img class="img-normal" src="/assets/embed3.png" alt="image rework">
-                    <!-- <img src="/assets/embed3_.png" alt="image rework small"> -->
-                    <img class="img-normal" src="/assets/embed4.png" alt="image ruby on rails">
-                    <img class="img-small" src="/assets/embed4_.png" alt="image ruby on rails small">
+                    <div class="imagen">
+                        <img class="img-normal" src="/assets/embed1.png" alt="image js party ">
+                        <img class="img-small" src="/assets/embed1_.png" alt="image js party small">
+                    </div>
+                    <div class="imagen">
+                        <img class="img-normal" src="/assets/embed2.png" alt="image sintax">
+                        <img class="img-small" src="/assets/embed2_.png" alt="image sintax small">
+                    </div>
+                    <div class="imagen">
+                        <img class="img-normal" src="/assets/embed3.png" alt="image rework">
+                        <!-- <img src="/assets/embed3_.png" alt="image rework small"> -->
+                    </div>
+                    <div class="imagen">
+                        <img class="img-normal" src="/assets/embed4.png" alt="image ruby on rails">
+                        <img class="img-small" src="/assets/embed4_.png" alt="image ruby on rails small">
+                    </div>
+                    
                 </div>
             </section>
         </div>
@@ -94,19 +104,27 @@
                 <h2 class="topicos-h2">Algunos de nuestros temas</h2>
                 <div class="article-div">
                     <div class="topico topico1">
-                        <img src="/assets/icon1.svg" alt="">
+                        <div class="img-topico">
+                            <img src="/assets/icon1.svg" alt="">
+                        </div>
                         <p>Trabajo remoto</p>
                     </div>
                     <div class="topico topico2">
-                        <img src="/assets/icon2.svg" alt="">
+                        <div class="img-topico">
+                            <img src="/assets/icon2.svg" alt="">
+                        </div>
                         <p>Repensando la programación</p>
                     </div>
                     <div class="topico topico3">
-                        <img src="/assets/icon3.svg" alt="">
+                        <div class="img-topico">
+                            <img src="/assets/icon3.svg" alt="">
+                        </div>
                         <p>Bases de código</p>
                     </div>
                     <div class="topico topico4">
-                        <img src="/assets/icon4.svg" alt="">
+                        <div class="img-topico">
+                            <img src="/assets/icon4.svg" alt="">
+                        </div>
                         <p>Seguridad informática</p>
                     </div>
                 </div>                
@@ -115,7 +133,9 @@
         <div class="novedades-div">
             <section class="novedades-section">
                 <h2 class="h2-color">¿Quieres las últimas novedades?</h2>
-                <a class="link" href="#">escucha los episodios</a>
+                <div class="link-div">
+                    <a class="link" href="#">escucha los episodios</a>
+                </div>
             </section>
         </div>
     </main>
